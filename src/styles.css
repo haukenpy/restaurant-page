@@ -75,3 +75,39 @@ img {
 }
 
 /* MENU PAGE */
+
+.menu-container {
+    height: 90vh;
+    width: var(--width);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1vw;
+
+    background-color: white;
+}
+
+.menu-item {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+
+    height: 40vh;
+    width: 50vw;
+}
+
+.menu-item > div {
+    margin: 5px, 5px;
+    padding: 1vw;
+
+    width: 20vw;
+    font-size: var(--font-size);
+}
+
+.menu-item > img {
+    filter: none;
+    height: 40vh;
+    width: 25vw;
+}

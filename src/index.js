@@ -1,6 +1,7 @@
 import './styles.css';
 import { landingPage } from './js-files/homepage';
 import { aboutUs } from './js-files/aboutus';
+import { ourMenu } from './js-files/menu';
 
 const homepage = (function(){
 
@@ -11,8 +12,6 @@ const homepage = (function(){
     const homeBtn =  document.querySelector("#home-btn");
     const aboutBtn = document.querySelector("#about-us-btn");
     const menuBtn = document.querySelector("#menu-btn");
-    const careerBtn = document.querySelector("#career-btn");
-    const contactBtn = document.querySelector("#contact-btn");
 
     // function
     const clearContent = function() {
@@ -29,7 +28,10 @@ const homepage = (function(){
         aboutUs();
     });
 
-    menuBtn.addEventListener("click", clearContent);
+    menuBtn.addEventListener("click", () => {
+        clearContent();
+        ourMenu();
+    });
 
     landingPage()
 })();
