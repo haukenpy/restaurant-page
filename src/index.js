@@ -1,3 +1,3 @@
-import { functionOne } from './js-files/homepage';
+import { landingPage } from './js-files/homepage';
 
-functionOne();
+landingPage();
