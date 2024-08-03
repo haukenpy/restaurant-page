@@ -1,0 +1,65 @@
+:root {
+    --font-size: 1.5rem;
+    --font-size-small: 1rem;
+
+    --width: 98.5vw;
+
+    --white-bg: white;
+    --black-bg: black;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr, 1fr;
+    height: 8vh;
+    width: var(--width);
+    background-color: var(--black-bg);
+}
+
+.logo, .nav-buttons {
+    color: var(--white-bg);
+    align-self: center;
+    justify-self: center;
+    font-size: var(--font-size);
+}
+
+button {
+    border: none;
+    background: none;
+    color: var(--white-bg);
+    background-color: var(--black-bg);
+    font-size: var(--font-size-small);
+    margin-left: 1.5vw;
+}
+
+button:hover, button:focus {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+#content {
+    width: var(--width);
+    height: 80vh;
+}
+
+img {
+    margin-top: 1vh;
+    filter: grayscale(90%);
+    height: 60vh;
+    width: var(--width);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 29vh;
+    width: var(--width);
+    color: black;
+    background-color: tan;
+}

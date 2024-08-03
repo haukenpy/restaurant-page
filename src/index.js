@@ -1,1 +1,3 @@
-console.log("hello world");
+import { functionOne } from './js-files/homepage';
+
+functionOne();
