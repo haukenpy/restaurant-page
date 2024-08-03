@@ -12,15 +12,14 @@ const landingPage = function() {
     const introductionH3 = document.createElement("h3");
     const introductionPOne = document.createElement("p");
     const introductionPTwo = document.createElement("p");
+    const img = new Image();
     
     // Assign classes
     imageDiv.classList.add("image-container");
-    introductionDiv.classList.add("introduction");
+    introductionDiv.classList.add("text-div");
 
     // Add content
-    const img = new Image();
     img.src = image;
-
     introductionH1.textContent = "Hello it's Glaze";
     introductionH3.textContent = "An independently owned eatery. capturing our love for home comforts";
     introductionPOne.textContent = "Part eatery and part cafe, we are your neighbourhood eatery best for early morning coffee, quick lunches, and a night hangout spot. Come pop in and say hello!";
